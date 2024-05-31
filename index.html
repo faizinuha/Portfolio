@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Portfolio </title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png">
+            <a href="https://youtube.com/@AsmrProg" target="_blank">AsmrProg</a>
+        </div>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+        <button onclick="goToContact()"><i class="bx bxl-github"></i> Github Me</button>
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+
+    <div class="main" id="main">
+        <div class="left">
+            <h5>Hey, I am zaki</h5>
+            <h3>I create <span>portofolio</span> and Front End </h3>
+            <p class="vertikal">
+                Terima kasih,telah melihat portofolio saya
+                perkenalkan saya zaki saya seorang Front End Basic
+            </p>
+            <button>Get In Touch</button>
+        </div>
+        <div class="right">
+            <img src="assets/utaha1.png">
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h5>Keterampilan Saya</h5>
+        <h3>Keahlian Saya</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bxl-html5'></i></div>
+                <h4>Pengembangan Web</h4>
+                <p>
+                    Saya sedang mempelajari penggunaan AI untuk meningkatkan efisiensi dan kualitas dalam pengembangan web, dengan fokus pada pembuatan situs yang responsif dan dinamis.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-javascript'></i></div>
+                <h4>Pemrograman JavaScript</h4>
+                <p>
+                    Saya sedang mengeksplorasi bagaimana AI dapat membantu dalam optimasi kode JavaScript, meningkatkan performa aplikasi dan pengalaman pengguna.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-php'></i></div>
+                <h4>Pengembangan Backend</h4>
+                <p>
+                    Saya sedang belajar untuk mengintegrasikan AI dalam pengembangan backend menggunakan PHP, untuk membuat sistem yang lebih cerdas dan efisien.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-vuejs'></i></div>
+                <h4>Framework Vue.js</h4>
+                <p>
+                    Saya sedang dalam tahap awal mempelajari penggunaan AI dalam pengembangan aplikasi menggunakan framework Vue.js, untuk menciptakan fitur-fitur yang lebih interaktif dan responsif.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="about" id="about">
+        <div class="left">
+            <img src="assets/utaha1.png" alt="Foto Zaki">
+        </div>
+        <div class="right">
+            <h5>About</h5>
+            <h3>I Am Zaki</h3>
+            <p>Terima kasih, telah melihat portofolio saya. Perkenalkan, saya Zaki, saya seorang Front End Developer
+                yang berfokus pada desain dan implementasi antarmuka yang simpel dan efektif. Saya memiliki pengalaman
+                dalam HTML, CSS, dan JavaScript, dan selalu berusaha untuk menciptakan pengalaman pengguna yang terbaik.
+            </p>
+            <p>Saya selalu bersemangat untuk belajar teknologi baru dan meningkatkan keterampilan saya dalam
+                pengembangan web. Saya percaya bahwa antarmuka yang bersih dan fungsional adalah kunci untuk kesuksesan
+                sebuah aplikasi web.</p>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="header">
+            <div class="info">
+                <h5>Recent Projects</h5>
+                <h3>My Portfolio</h3>
+                <h2>Beberapa Website yang Tidak Terlalu keren tetapi saya berjuang yang terbaik</h2>
+            </div>
+            <button onclick="website()" target="_blank"><i class='bx bxl-github'></i> Visit My github</button>
+        </div>
+        <script>
+            function website() {
+                window.location.href = 'https://github.com/faizinuha';
+            }
+        </script>
+        <div class="portfo-items">
+            <div class="item">
+                <img src="assets/Screenshot.jpg">
+                <div class="info">
+                    <h4>Portfolio #3</h4>
+                    <p>
+                        contoh Website School
+                    </p>
+                    <a href="https://smkalazhar.vercel.app/">View in Broweer <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/sc-2.jpg">
+                <div class="info">
+                    <h4>Simple Blog Page</h4>
+                    <p>
+                        Contoh Game Simpel yang Kami buat dengan AI dan sedikit Pemograman
+                    </p>
+                    <a href="https://client-module-po-d5ku.vercel.app/">View in Browser <i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/sc-3.jpg">
+                <div class="info">
+                    <h4>Animated Nav</h4>
+                    <p>
+                        Website ini belum kami Deploy
+                        kalian bisa Klik Ini bawah untuk Melihat ScrenShort
+                    </p>
+                    <a href="#" onclick="github()">View in Browser <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function github() {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Klik di bawah ini Untuk Lihat SS",
+                    footer: '<a href="assets/us_4.jpg">View Image</a>'
+                });
+            }
+        </script>
+    </div>
+
+    <!-- <div class="feedback" id="feedback">
+        <h5>Clients Reviews</h5>
+        <h3>Customers Feedback</h3>
+        <div class="customers">
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                </p>
+                <div class="user">
+                    <img src="assets/us-1.jpg">
+                    <div class="info">
+                        <h5>Dianne Russell</h5>
+                        <p>Starbucks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                </p>
+                <div class="user">
+                    <img src="assets/us-2.jpg">
+                    <div class="info">
+                        <h5>Kristian Watson</h5>
+                        <p>Louis Vuitton</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. Duis cursus, mi quis viverra.
+                </p>
+                <div class="user">
+                    <img src="assets/us-3.jpg">
+                    <div class="info">
+                        <h5>Kathryn Murphy</h5>
+                        <p>McDonald's</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="assets/logo.png">
+                <a href="https://youtube.com/@AsmrProg">AsmrProg</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>
+                Create: Made With ❤️ By Zaki/
+                Template:AsmrProg
+            </p>
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Setting</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
