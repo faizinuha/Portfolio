@@ -1,7 +1,6 @@
 function openMenu() {
     const nav = document.querySelector('nav');
-    nav.classList.toggle('open');
-   
+    nav.classList.toggle('open'); 
     open();
 }
 function goToContact() {

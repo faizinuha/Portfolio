@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      align-items: baseline;
+    }
+    .who {
+      white-space: inherit;
+      height: 30px;
+      width: 40px;
+      background-color: aqua;
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: black;
+      transition: 2s ease;
+      text-align: center;
+      position: relative; /* Needed for ::before positioning */
+    }
+
+    .who:hover {
+      background-color: blue;
+      border-radius: 10px 20px;
+    }
+
+    .who::before {
+      content: ""; /* Required to display ::before content */
+      position: absolute;
+      width: 100%;
+      height: 5px; /* Height of the ::before element */
+      background-color: green;
+      top: -10px; /* Positioning above the .who element */
+      left: 0;
+      transition: 0.5s ease; /* Transition effect */
+      z-index: -1;
+    }
+
+    .who:hover::before {
+      background-color: blue;
+      top: 100%; /* Move the ::before element further up on hover */
+    }
+    .img-fluid {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Update Website Twiiter</h1>
+      <hr />
+      <a href="index.html" class="who">Back</a>
+    </div>
+    <div class="img-fluid">
+      <img src="assets/dashbaord.jpg" alt="" />
+    </div>
+    <div class="img-fluid">
+      <img src="assets/wELL.jpg" alt="" />
+    </div>
+  </body>
+</html>
